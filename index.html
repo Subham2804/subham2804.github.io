@@ -1,498 +1,269 @@
-<!=DOCTYPE html>
-<html lang ="en">
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <title>Subham</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--
+    	Brownie Template
+    	http://www.templatemo.com/preview/templatemo_440_brownie
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            >
-
-    </script>
-
-    <style type="text/css">
-      *,
-      *::before,
-      *::after{
-              box-sizing: border-box;
-               }
-      *:focus{
-              outline: none;
-             }
-      body{
-          padding: 0;
-          margin:125;
-          Background: #000;
-          color: white;
-          font-family:"Oxygen" , sans-serif;
-
-
-          }
-      a{
-
-        text-decoration: none;
-       }
-
-      img{
-          width: 100%;
-
-
-        }
-
-    .home img{
-              border-radius: 50%;
-              width: 100%;
-              -webkit-filter: grayscale(0%)
-              contrast(100%);
-              filter:grayscale(0%) contrast(100%)
-              brightness(60%);
-
-             }
-      .folio img{
-                 filter: grayscale(0%);
-                }
-       img:hover {
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-          }
-
-        aside{
-
-             position: fixed;
-             background: #b2b2b2;
-             top: 0px;
-             left: 0px;
-             width: 120px;
-             height: 100%;
-             overflow: none;
-             z-index: 1;
-             text-align: center;
-             padding: 0;
-
-             }
-
-             aside img{
-                filter: grayscale(0%) contrast(50%) brightness(100%);
-                margin-bottom: -3px;
-
-                      }
-            .material-icons.md-36{
-
-                                  font-size: 36px;
-                                  }
-            aside a{
-                    display: block;
-                    padding: 15px 0;
-                    color: white;
-                    transition: all 0.35s;
-                    text-transform: uppercase;
-                    font-size: 0.75em;
-                    letter-spacing: 2px;
-                    }
-            aside p{
-                     margin: 0;
-                      padding: 0;
-
-                    }
-            aside a:hover{
-                          background: #000;
-
-                          }
-            aside nav a:nth-child(2){
-                                      background: #000;
-
-                                      }
-            aside nav a:nth-child(2):hover{
-                                            background: #b2b2b2;
-                                            color: #222;
-                                            }
-            main{
-                 max-width:980px;
-                 background: #000;
-                 margin-left: 20%;
-                 padding: 12px 50px 12px 50px;
-                }
-
-            header{
-                    text-align: center;
-                    letter-spacing: 2 px;
-                    }
-            header h1{
-              font-weight: bold;
-              font-size: 4em;
-            }
-
-            header h5{
-                      font-weight:300;
-                      font-size: 1em;
-                      letter-spacing: 4px;
-                      color: #b2b2b2;
-
-                      }
-            .about,
-            .folio,
-            .contact{
-                      line-height: 1.5em;
-                      letter-spacing: 1px;
-                      font-weight: 300;
-
-                      }
-            .about h2,
-            .folio h2,
-            .contact h2{
-                       font-weight: 300;
-                       text-transform;: uppercase;
-                       text-decoration: line-through'
-                       padding-bottom: 10px;
-                       margin: 100px 0 0 0;
-                       letter-spacing:4px;
-                        }
-            .about p{
-              color: #b2b2b2;
-            }
-
-            .about span{
-                        font-weight: 600;
-                        color: white;
-
-                        }
-            .about h3{
-                      font-weight:300;
-                      margin: 50px;
-                     }
-            .skills{
-                     text-align: right;
-                     padding-right:20px;
-                     line-height: 30px;
-                     color: white;
-                     background-color: #800080;
-                    }
-            .c{ width:95%;}
-            .JAVA{width:35%;}
-            .Python{width:65%;}
-            .JavaScript{width:50%;}
-
-            .folio h3{
-                      color: white;
-                      font-weight: 300;
-                      letter-spacing: 2pzx;
-                      }
-
-            .folio p{
-                     font-size: 0.875em;
-                     }
-            .row-halves{
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        justify-content: space-between;
-                        margin: 20px 0;
-                        -webkit-flex-pack:justify;
-
-                        }
-
-              .row-halves .col{
-                                width: 49%;
-
-                               }
-                 .col{
-                     border:1px solid #222;
-                     background: #222;
-                     color: #b2b2b2;
-                     padding: 10px;
-
-                     }
-
-                label{
-                      color: #b2b2b2;
-                      }
-                form input[type="text"],
-                select,
-                textarea{
-                  width: 100%;
-                  padding: 12px;
-                  border: none;
-                  border: 1px solid #222;
-                  background: transparent;
-                  margin-top: 6px;
-                  margin-bottom: 16px;
-                  resize: vertical;
-                  color: #b2b2b2;
-                }
-
-                form input[type="text"]:focus,
-                textarea:focus{
-                              outline: none;
-                              border: 1px solid #009688;
-                               }
-                input[type="submit"]{
-                  background-color:transparent;
-                  color: #b2b2b2;
-                  text-transform:uppercase;
-                  padding:12px 20px;
-                  border: 1px solid #222;
-                  cursor: pointer;
-                  transition: all 0.35s;
-                }
-
-                input[type="submit"]:hover{
-                  background-color: #b2b2b2;
-                  color: #222;
-                }
-
-                .contact .container{
-                  margin-top: 20px;
-                  margin-bottom: 100px;
-                  background: transparent;
-                  padding:20px 0;
-                }
-
-                .footer{border-top: 1px solid #222;}
-                .top-bar{
-                  padding:20px 0;
-                  text-align: center;
-                }
-                .responsive{
-                  width: 100%;
-                  height: auto;
-                }
-                .top-bar a{
-                          margin: 10px;
-                          font-size:2em;
-                          color: #b2b2b2;
-                          transition: all 0.35s;
-                          display: inline-block;
-
-
-                }
-
-                .top-bar a:hover{
-                            transform: scale(1,1);
-                            color: #009688;
-
-                }
-                .bottom-bar{
-                  background: #000;
-                  font-size: 0.75em;
-                  text-align: center;
-
-                }
-
-                @media (max-width: 768px){
-                  .row-halves{display:block;}
-                 .row-halves .col{margin:0 0 10px 0; width: 100%;}
-                }
-
-                @media (max-width: 601px){
-                  aside{display:none;}
-                 main{margin:0 auto; width: 100%;padding: 12px 25px;}
-
-                 header{
-                        margin-top: 80px;
-                      }
-                  header h1{
-                           font-size: 3em;
-                           line-height: 1.4em;
-                             }
-              header h5{
-                      font-size: 1em;
-                    letter-spacing: 2px;;
-                        }
-
-              .mobile-nav{
-                         position: fixed;
-                         width: 100%;
-                         display: flex;
-                         fustify-content: space-around;
-                         background: rgba(0,0,0,0.8);
-                         z-index: 1;
-                          }
-
-                .mobile-nav a{
-                         width:100%;
-                         color:#b2b2b2;
-                         text-transform: uppercase;
-                         font-size:0.875em;
-                         letter-spacing: 2px;
-                         text-align: center;
-                         padding: 10px 10px;
-                         transition: all 0.35s;
-
-                              }
-
-                   .mobile-nav a:hover{
-                                   background: #b2b2b2;
-                                   color: #222;
-
-                                     }
-                }
-
-                @media (min-width:600px){
-                  .mobile-nav{
-                    display: none;
-                  }
-                }
-    </style>
+    	Credits:
+    	http://sorgalla.com/jcarousel/
+    	http://unsplash.com
+    	http://absurdwordpreferred.deviantart.com/art/FREE-Cogs-Transparent-PNG-145452644
+    -->
+	<title>I'm Subham - Responsive HTML5 Template</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<nav id="responsive-menu">
+        <ul class="menu-holder">
+            <li class="active"><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#about"><i class="fa fa-briefcase"></i>About</a></li>
+            <li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
+            <li><a href="#products"><i class="fa fa-list"></i>Products</a></li>
+            <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="templatemo-site-header">
+		<div class="container">
+			<div class="row templatemo-position-relative">
+				<nav class="hidden-xs text-uppercase templatemo-nav">
+					<ul class="menu-holder">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#about">Skills</a></li>
+						<li><a href="#services">Experience</a></li>
+						<li><a href="#products">Contribution</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<h1 class="templatemo-site-name">
+                	<span class="templatemo-brown">I am</span>
+                	<span class="templatemo-gold">Subham</span>
+                </h1>
+				<div class="text-right visible-xs">
+		            <a href="#" id="mobile_menu"><span class="fa fa-bars"></span></a>
+		        </div>
+			</div>
+		</div>
+    </div>
+	<section id="home" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 templatemo-position-relative">
+					<div class="templatemo-flex-center templatemo-black-bg text-center">
+						<div class="templatemo-home-image-container">
+							<img src="images/bicycle.jpg" alt="Home" class="templatemo-home-image">
+							<div class="templatemo-image-overlay">
+								<span class="fa fa-search templatemo-search-icon"></span>
+								<p class="text-uppercase templatemo-gold"></p>
+								<p class="text-uppercase"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box templatemo-second-box">
+						<h2 class="templatemo-brown">About Me</h2>
+						<h3 class="templatemo-gold">Hey there ,I am a 3rd year Computer Science Undergraduate from Indian Institute of Information Technology Kalyani</h3>
+						<p class="margin-top-30"></p>
+						<a href="https://github.com/Subham2804/My-Resume/blob/master/Resume.pdf" class="btn text-uppercase templatemo-btn templatemo-info-btn">Resume</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box text-right">
+						<h2 class="templatemo-brown">
+							<span class="templatemo-section-title"></span>
+							<span class="templatemo-section-title">My <span class="templatemo-gold"><strong>Skills</strong></span></span>
+						</h2>
+						<p class="margin-top-30">I am a Data Science enthusias. My skills Involves Deep Learning , Machine Learning , Web Scraping ,Computer Vision .I also do have experience on Software Development using Java.Additionally I have also worked on Virtual Reality Applications staged on Unity3D development tools.</p>
+						<p>I am Proficient in C ,Java as well as Python.</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+							<div class="jcarousel-wrapper templatemo-team">
+								<div class="jcarousel">
+								    <ul>
+								        <li>
+								        	<div class="text-center templatemo-team-member-container">
+								        		<div class="templatemo-member-img-container">
+								        			<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
+								        			<img src="images/team-member-1.jpg" alt="Team Member 1" class="tm-team-member-img">
+								        		</div>
+												<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">Python</h3>
+												<img src="images/underline.png" alt="Underline" class="margin-top-15 img-responsive center-block">
+												<p class="margin-top-15">Frameworks worked on: Tensorflow ,Keras,openCV, Selenium</p>
+												<p class="templatemo-brown text-uppercase">Projects in Resume</p>
+											</div>
+								        </li>
+								        <li>
+								        	<div class="text-center templatemo-team-member-container">
+								        		<div class="templatemo-member-img-container">
+								        			<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
+													<img src="images/team-member-2.jpg" alt="Team Member 2" class="img-circle tm-team-member-img">
+												</div>
+												<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">Java</h3>
+												<img src="images/underline.png" alt="Underline" class="margin-top-15">
+												<p class="margin-top-15">Frameworks worked on: Spring , Maven , .Net</p>
+												<p class="templatemo-brown text-uppercase">Projects in Resume</p>
+											</div>
+								        </li>
+								        <li>
+								        	<div class="text-center templatemo-team-member-container">
+								        		<div class="templatemo-member-img-container">
+								        			<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
+													<img src="images/team-member-3.jpeg" alt="Team Member 3" class="img-circle tm-team-member-img">
+												</div>
+												<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">Virtual Reality</h3>
+												<img src="images/underline.png" alt="Underline" class="margin-top-15">
+												<p class="margin-top-15">Worked on Unity3D as well as Blender 2.8(For 3D Modelling and Animations)</p>
+												<p class="templatemo-brown text-uppercase">Projects in Resume</p>
+											</div>
+								        </li>
+								    </ul>
+								</div>
+								<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+				                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="services" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg text-center">
+						<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+							<div class="templatemo-flex-item-ie-fix padding-30">
+								<h2 class="templatemo-gold">Worked With</h2>
+								<div class="templatemo-service-container margin-top-15">
+									<img src="images/plan-1.png" alt="Plan 1" class="templatemo-service-image">
+									<div class="templatemo-service-content text-left">
+										<h3 class="templatemo-service-title templatemo-brown">Intellify(Intern)  (Nov 2019 -Dec 2019)</h3>
+										<p class="templatemo-service-description">Worked as Automation Intern</p>
+									</div>
+								</div>
+								<!-- <div class="templatemo-service-container">
+									<img src="images/plan-2.png" alt="Plan 2" class="templatemo-service-image">
+									<div class="templatemo-service-content text-left">
+										<h3 class="templatemo-service-title templatemo-brown">sagittis sem nibhd</h3>
+										<p class="templatemo-service-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat.</p>
+									</div>
+								</div>
+								<div class="templatemo-service-container">
+									<img src="images/plan-3.png" alt="Plan 3" class="templatemo-service-image">
+									<div class="templatemo-service-content text-left">
+										<h3 class="templatemo-service-title templatemo-brown">duis sed odio sit amet</h3>
+										<p class="templatemo-service-description">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box templatemo-second-box">
+						<h2 class="templatemo-brown">
+							<span class="templatemo-section-title"></span>
+							<span class="templatemo-section-title">My <span class="templatemo-gold"><strong>Experience</strong></span></span>
+						</h2>
+						<p class="margin-top-30"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="products" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box text-right">
+						<h2 class="templatemo-brown">
+							<span class="templatemo-section-title"></span>
+							<span class="templatemo-section-title">My <span class="templatemo-gold"><strong>Contributions</strong></span></span>
+						</h2>
+						<p class="margin-top-30">Contributing in the field of Open Source.Apart from that ,been a part of Football Team ,E-Sports Coordinator at Indian Institute Of Information Technology Kalyani</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+							<div class="jcarousel-wrapper templatemo-products">
+								<div class="jcarousel">
+								    <ul>
+								        <li>
+								        	<div class="templatemo-product-container text-center">
+												<h3 class="templatemo-gold">Open Source</h3>
+												<img src="images/product-1.png" alt="Product 1" class="templatemo-product-img">
+											</div>
+								        </li>
+								        <li>
+								        	<div class="templatemo-product-container text-center">
+												<h3 class="templatemo-gold">E-Sports</h3>
+												<img src="images/product-2.png" alt="Product 2" class="templatemo-product-img">
+											</div>
+								        </li>
+								        <li>
+								        	<div class="templatemo-product-container text-center">
+												<h3 class="templatemo-gold">Football</h3>
+												<img src="images/product-3.png" alt="Product 3" class="templatemo-product-img">
+											</div>
+								        </li>
+								    </ul>
+								</div>
+								<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+				                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<form action="#" method="post">
+							<div class="tm-contact-form">
+				                <div class="form-group">
+				                    <input type="text" id="contact_name" class="form-control" placeholder="Name..." />
+				                </div>
+				                <div class="form-group">
+				                    <input type="email" id="contact_email" class="form-control" placeholder="Email..." />
+				                </div>
+				                <div class="form-group">
+				                    <input type="text" id="contact_subject" class="form-control" placeholder="Subject..." />
+				                </div>
+				                <div class="form-group">
+				                    <textarea id="contact_message" class="form-control" rows="8" placeholder="Message..."></textarea>
+				                </div>
+			                </div>
+			                <button type="submit" class="btn text-uppercase templatemo-btn templatemo-send-btn">Send</button>
+			            </form>
+					</div>
+				</div>
 
-      <aside>
-        <nav>
-          <img src="src/top.jpg" alt="">
-            <a href="#home"><i class ="material-icons md-36">home</i>
-              <p>Home</p>
-              </a>
+	</section>
 
-              <a href="#about"><i class ="material-icons md-36">person</i>
-                <p>About</p>
-                </a>
-
-                <a href="#folio"><i class ="material-icons md-36">image</i>
-                  <p>Folio</p>
-                  </a>
-
-                  <a href="#contact"><i class ="material-icons md-36">mail</i>
-                    <p>Contact</p>
-                    </a>
-            </nav>
-            </aside>
-
- <nav class ="mobile-nav">
-   <a href="#home">Home</a>
-   <a href="#about">About</a>
-   <a href="#folio">Folio</a>
-   <a href="#contact">Contact</a>
- </nav>
-
- <main>
-    <header class="home" id="home"><br><br>
-      <h1>I'm Subham</h1>
-      <a href="resume.pdf">Download Resume</a>
-      <h5>Programmer | Gamer</h5>
-      <img src="src/profile.jpg" alt="" height="600" width="50">
-
-    </header>
-  </main>
-
-    <section class="about" id="about">
-
-        <h1><font size="10">About me</font></h1>
-        <p></p>
-        <p></p>
-        <br>
-        <p>
-            <span>Hello, I'm Subham,</span>
-            a Computer Science Undergraduate from Indian Institute Of Information </br>Technology , Kalyani and born in Bokaro Steel City(Jharkhand).I am currently pursuing my 5th<br> semester  of B.Tech in Computer Science
-            and Engineering.
-        </p>
-        <p>
-          I am an enthuastic coder,a gamer and a quick learner.Machine learmimg and AI excites me.<br>Have had a fare share of experience in IOT(Internet Of Things).
-        </p>
-
-
-        <h1>My Skills</h1>
-        <p></p>
-        <p></p>
-        <br>
-        <p><b><i>Beginner  :  </i></b>javaScript, Machine Learning, Android</p>
-        <p><b><i>Intermediate  :  </i></b>HTML,CSS,JavaScript,IOT, shell scripting </p>
-        <p><b><i>Expert  :  </i></b>Objective C,Java ,JavaFX,Python</p>
-        <p><h3><u>% proficiency in Languages<u></h3></p>
-        <p>C</p>
-        <div class="container">
-          <div class="skills C">95%</div>
-        </div>
-
-        <p>JAVA</p>
-        <div class="container">
-          <div class="skills JAVA">35%</div>
-        </div>
-
-        <p>Python</p>
-        <div class="container">
-          <div class="skills Python">65%</div>
-        </div>
-
-        <p>JavaScript</p>
-        <div class="container">
-          <div class="skills JavaScript">50%</div>
-        </div>
-
-    </section>
-
-    <section class="folio" id="folio">
-
-        <h1><font size="10">Folio</font></h1>
-
-        <div class="row-halves">
-          <div class="col">
-            <img src ="src/football.jpg" alt="" class="responsive">
-            <h3>Football Team</h3>
-            <p>
-              IIIT kalyani football team for Reliance Foundation League
-            </p>
-          </div>
-
-
-            <div class="col">
-              <img src ="src/iiit.jpg" alt="" class="responsive">
-              <h3>Indian Institute Of Information Technology Kalyani</h3>
-              <p>
-                Mentored By IIT Kharagpur
-              </p>
-            </div>
-
-
-              <div class="col">
-                <img src ="src/hackathon.jpg" alt="" class="responsive">
-                <h3>Utkal hacks 2019</h3>
-                <p>
-                  Secured 5th rank overall and 2nd in IOT
-                </p>
-              </div>
-
-
-                <div class="col">
-                  <img src ="src/iot.jpg" alt="" class="responsive">
-                  <h3>Project</h3>
-                  <p>
-                    Smart dustbin with ML application.
-                  </p>
-                </div>
-
-
-          </div>
-        </section>
-
-        <section class ="contact" id="contact">
-
-          <h2><font size="10">Contact</font></h2>
-          <div class="container">
-            <form action="">
-              <label for="name">Name</label>
-              <input type=text" id="name" name="name">
-              <label for="email">E-mail</label>
-              <input type=text" id="email" name="email">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" style="height:200px">
-                </textarea>
-                <input type="submit" value="message">
-
-            </form>
-          </div>
-        </section>
-
-        <footer>
-          <section class="top-bar">
-            <a href="https://www.facebook.com/profile.php?id=100017298604451"><i class="fa fa-facebook">Facebook</i></a>
-            <a href="https://www.linkedin.com/in/subham-singh-b10267172"><i class="fa fa-twitter">Linkedin</i></a>
-            <a href="https://github.com/Subham2804"><i class="fa fa-github">Github</i></a>
-            </section>
-
-            <section class="bottom-bar">
-              <p>&copy 2019 | All rights reserver</p>
-             </section>
-
-        </footer>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/templatemo_script.js"></script>
 </body>
 </html>
